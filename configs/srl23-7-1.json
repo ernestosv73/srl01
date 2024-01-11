@@ -2728,6 +2728,21 @@
     }
   },
   "srl_nokia-network-instance:network-instance": [
+{
+      "name": "default",
+      "type": "srl_nokia-network-instance:default",
+      "ip-forwarding": {
+        "receive-ipv6-check": true
+      },
+      "interface": [
+        {
+          "name": "ethernet-1/1.0"
+        },
+        {
+          "name": "ethernet-1/2.0"
+        }
+      ],
+    
     {
       "name": "mgmt",
       "type": "srl_nokia-network-instance:ip-vrf",
