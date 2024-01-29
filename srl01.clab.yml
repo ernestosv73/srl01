@@ -17,4 +17,4 @@ topology:
       - ip -6 route del default dev eth0
 
   links:
-    - endpoints: ["PC1:eth1", "srl1:e1-1"]      
+    - endpoints: ["PC1:eth1", "srl:e1-1"]      
