@@ -13,7 +13,7 @@ topology:
 
     srl2:
       kind: nokia_srlinux
-      #startup-config: configs/srl1.cfg
+      startup-config: srl2/config.json
     
     PC1:
       kind: linux
