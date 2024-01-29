@@ -10,3 +10,11 @@ topology:
     srl:
       kind: nokia_srlinux
       #startup-config: configs/srl1.cfg
+    PC1:
+      kind: linux
+      image: docker.io/esanchezv/kaliipv6v2.1:latest
+      exec:
+      - ip -6 route del default dev eth0
+
+  links:
+    - endpoints: ["PC1:eth1", "srl1:e1-1"]      
